@@ -8,7 +8,7 @@ import numpy as np
 # Create an ADB device and connect it to Bluestacks
 def connectToBluestacks():
     print('■ - Checking adb devices...')
-    output_stream = os.popen('C:/Android/platform-tools/adb devices')
+    output_stream = os.popen('adb devices')
     outp = output_stream.read()
     outp = outp.split('\n')
     outp.remove('List of devices attached')
